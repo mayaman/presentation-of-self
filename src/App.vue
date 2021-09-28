@@ -1,14 +1,22 @@
 <template>
   <div id="app">
-    <!-- <section>
-      {{ Math.floor(currentSecond / 60000) }}:{{
-        Math.floor(currentSecond / 60000)
-      }}
-    </section> -->
-    <!-- 
-    <section>
-      <p>Maya Man</p>
-    </section> -->
+    <movable
+      posTop="522"
+      posLeft="222"
+      class="modaltitle movable-img"
+      target="parentEl"
+    >
+      <img src="@/assets/sticker/purple.png" alt="" />
+    </movable>
+
+    <movable
+      posTop="1522"
+      posLeft="1090"
+      class="modaltitle movable-img"
+      target="parentEl"
+    >
+      <img src="@/assets/sticker/lilmiq.png" alt="" />
+    </movable>
 
     <section>
       <iframe src="https://mayaontheinter.net/" frameborder="0"></iframe>
@@ -26,6 +34,10 @@
     </section>
 
     <section>
+      <movable class="modaltitle movable-img" target="parentEl">
+        <img src="@/assets/sticker/girlboss.png" alt="" />
+      </movable>
+
       <img src="@/assets/presentationofself.jpeg" alt="" />
       <p>
         "To stay in one's room, away from the place where the party is given is
@@ -33,14 +45,6 @@
         is a wedding."
       </p>
     </section>
-    <section>
-      <img src="@/assets/trickmirror.jpeg" alt="" />
-      <p>
-        "You can’t just walk around and be visible on the internet--for anyone
-        to see you, you have to <i>act</i>."
-      </p>
-    </section>
-
     <aside>❋</aside>
     <section>
       <img src="@/assets/tbh.png" alt="" />
@@ -56,6 +60,15 @@
       ></iframe>
     </section>
     <aside>❋</aside>
+    <section>
+      <img src="@/assets/trickmirror.jpeg" alt="" />
+      <p>
+        "You can’t just walk around and be visible on the internet--for anyone
+        to see you, you have to <i>act</i>."
+      </p>
+    </section>
+    <aside>❋</aside>
+
     <section>
       <h1>Putting myself on screen (dance, performance, software)</h1>
       <article>
@@ -103,9 +116,59 @@
       </article>
     </section>
     <aside>❋</aside>
+
     <section>
-      <p>Glance Back</p>
-      <p>Model Minority Myth</p>
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/918FaSUn+mL.jpg"
+        alt=""
+      />
+      <p>
+        "A woman must continually watch herself. She is almost continually
+        accompanied by her own image of herself."
+      </p>
+    </section>
+    <aside>❋</aside>
+    <section>
+      <article>
+        <p><i>Glance Back</i></p>
+        <p>
+          You spend so much time looking at your computer... doesn't your
+          computer deserve a chance to look back at you?
+        </p>
+        <img src="@/assets/glancebackchromeweb.png" alt="" />
+        <p>
+          Glance Back is a daily photo diary, capturing the moments shared
+          between you and your computer. Once a day, when you open a new tab,
+          Glance Back will unexpectedly take your photo, ask you what you’re
+          thinking about, and save both the photo and written thought to its
+          locally stored archive.
+        </p>
+        <img src="@/assets/1_question.png" alt="" />
+        <img src="@/assets/2_mainpage.png" alt="" />
+
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          src="@/assets/glancebacks_2021-09-28.mp4"
+        ></video>
+      </article>
+      <article>
+        <p><i>THE MODEL MINORITY IS A MYTH!</i></p>
+        <iframe
+          src="https://www.are.na/maya-man/gospel-billboards"
+          frameborder="0"
+        ></iframe>
+        <img
+          src="https://mayaontheinter.net/media/pages/index/projects/the-model-minority-is-a-myth/07df52ee12-1626825609/2_maya_edit.jpg"
+          alt=""
+        />
+        <img
+          src="https://mayaontheinter.net/media/pages/index/projects/the-model-minority-is-a-myth/8320a587cc-1626825609/4_tweet.png"
+          alt=""
+        />
+      </article>
     </section>
     <aside>❋</aside>
     <section>
@@ -150,7 +213,18 @@ export default {
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap");
 body {
-  background: black;
+  /* background: url("https://media.istockphoto.com/photos/light-blue-spring-sky-picture-id466951264?k=20&m=466951264&s=612x612&w=0&h=r6J9dhGuLW4GRzPicUQAaRPSpz0qStcdFYJwJb040BY=");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  background: rgb(255, 204, 255);
+}
+
+.movable-img {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: auto;
 }
 
 h1,
@@ -160,9 +234,19 @@ h4,
 h5,
 p,
 a,
-iframe {
+iframe,
+img,
+video {
   padding: 0;
-  margin: 25px;
+  margin: 25px 0px;
+  max-width: 100%;
+  width: 100%;
+}
+
+iframe {
+  margin: auto;
+  display: block;
+  height: 500px;
 }
 
 #app {
@@ -173,7 +257,7 @@ iframe {
   line-height: 72px;
   font-weight: normal;
   text-align: center;
-  color: white;
+  color: #ed1288;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -184,31 +268,18 @@ iframe {
 }
 
 a {
-  color: white;
+  color: #ed1288;
   font-style: italic;
 }
 
 a:hover {
-  color: #ed1288;
+  color: blue;
   cursor: alias;
 }
 
 .clickable:hover {
-  color: #ed1288;
+  color: blue;
   cursor: pointer;
-}
-
-img,
-video {
-  max-width: 100%;
-}
-
-iframe {
-  max-width: 100%;
-  width: 100%;
-  margin: auto;
-  display: block;
-  height: 500px;
 }
 
 button {
@@ -227,7 +298,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  color: #ed1288;
+  color: blue;
 }
 
 h1,
@@ -235,6 +306,8 @@ h1,
   /* font-size: 108px;
   line-height: 140px; */
   font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
   /* padding: 0px; */
   /* margin: 0px; */
 }
@@ -243,7 +316,7 @@ h1,
 }
 
 ::selection {
-  background: #ed1288;
+  background: blue;
 }
 
 section {

@@ -113,8 +113,6 @@
       <p>Are.na channels, making sense of TikTok, girlhood, consumerism</p>
       <p>Jade</p>
       <iframe src="https://whoisjadeontheinter.net/" frameborder="0"></iframe>
-
-      <p>Artblocks?</p>
     </section>
   </div>
 </template>

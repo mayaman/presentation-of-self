@@ -107,7 +107,7 @@
           loop
           muted
           playsinline
-          src="@/assets/777_final.mp4"
+          src="@/assets/777_final_compressed.mp4"
         ></video>
         <video autoplay loop muted playsinline src="@/assets/joji.mp4"></video>
         <p><i>777 music video for JOJI</i>, directed by Saad Moosajee (2020)</p>
@@ -221,7 +221,7 @@
       <img src="@/assets/comment_04.jpg" alt="" />
       <img src="@/assets/comment_01.png" alt="" />
 
-      <article>
+      <!-- <article>
         <a
           data-pin-do="embedBoard"
           data-pin-board-width="900"
@@ -229,7 +229,9 @@
           data-pin-scale-width="800"
           href="https://www.pinterest.com/mayaontheinternet/quotes/"
         ></a>
-      </article>
+      </article> -->
+      <aside>❋</aside>
+
       <h1>thanks for listening : - )</h1>
     </section>
   </div>

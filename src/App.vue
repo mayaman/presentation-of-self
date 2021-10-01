@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <movable
-      posTop="522"
-      posLeft="222"
+    <!-- <movable
+      posTop="2022"
+      posLeft="30"
       class="modaltitle movable-img"
       target="parentEl"
     >
-      <img src="@/assets/sticker/purple.png" alt="" />
+      <img src="@/assets/channels/presentation.png" alt="" />
     </movable>
 
     <movable
-      posTop="1522"
+      posTop="800"
       posLeft="1090"
       class="modaltitle movable-img"
       target="parentEl"
     >
-      <img src="@/assets/sticker/lilmiq.png" alt="" />
-    </movable>
+      <img src="@/assets/channels/internet.png" alt="" />
+    </movable> -->
 
     <section>
       <iframe src="https://mayaontheinter.net/" frameborder="0"></iframe>
@@ -28,22 +28,14 @@
     </section>
     <aside>❋</aside>
     <section>
-      <h1 @click="updateTitle()" class="large clickable">
+      <h1 class="large">
         {{ titleOptions[titleIndex] }}
       </h1>
     </section>
 
     <section>
-      <movable class="modaltitle movable-img" target="parentEl">
-        <img src="@/assets/sticker/girlboss.png" alt="" />
-      </movable>
-
       <img src="@/assets/presentationofself.jpeg" alt="" />
-      <p>
-        "To stay in one's room, away from the place where the party is given is
-        to stay away from where reality is being performed. The world, in truth,
-        is a wedding."
-      </p>
+      <p>"The world, in truth, is a wedding."</p>
     </section>
     <aside>❋</aside>
     <section>
@@ -68,7 +60,6 @@
       </p>
     </section>
     <aside>❋</aside>
-
     <section>
       <h1>Putting myself on screen (dance, performance, software)</h1>
       <article>
@@ -117,7 +108,7 @@
     </section>
     <aside>❋</aside>
 
-    <section>
+    <!-- <section>
       <img
         src="https://images-na.ssl-images-amazon.com/images/I/918FaSUn+mL.jpg"
         alt=""
@@ -127,8 +118,10 @@
         accompanied by her own image of herself."
       </p>
     </section>
-    <aside>❋</aside>
+    <aside>❋</aside> -->
     <section>
+      <h1>Putting myself on screen some more (identity, image, analysis)</h1>
+
       <article>
         <p><i>Glance Back</i></p>
         <p>
@@ -138,14 +131,10 @@
         <img src="@/assets/glancebackchromeweb.png" alt="" />
         <p>
           Glance Back is a daily photo diary, capturing the moments shared
-          between you and your computer. Once a day, when you open a new tab,
-          Glance Back will unexpectedly take your photo, ask you what you’re
-          thinking about, and save both the photo and written thought to its
-          locally stored archive.
+          between you and your computer.
         </p>
         <img src="@/assets/1_question.png" alt="" />
         <img src="@/assets/2_mainpage.png" alt="" />
-
         <video
           autoplay
           loop
@@ -172,10 +161,38 @@
     </section>
     <aside>❋</aside>
     <section>
-      <p>Where do I want to go?</p>
-      <p>Are.na channels, making sense of TikTok, girlhood, consumerism</p>
-      <p>Jade</p>
-      <iframe src="https://whoisjadeontheinter.net/" frameborder="0"></iframe>
+      <p>okay so where am I going with this?</p>
+
+      <div class="channels">
+        <div class="channel" v-for="channelName in channels" v-bind:key>
+          <!-- <img :src="'@/assets/channels/${channelName}.png'" alt="" /> -->
+          <img :src="require('@/assets/channels/' + channelName + '.png')" />
+        </div>
+      </div>
+      <article>
+        <iframe src="https://whoisjadeontheinter.net/" frameborder="0"></iframe>
+      </article>
+
+      <iframe
+        width="200"
+        height="315"
+        src="https://www.youtube.com/embed/PMxECpwMesQ"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+
+      <article>
+        <a
+          data-pin-do="embedBoard"
+          data-pin-board-width="900"
+          data-pin-scale-height="500"
+          data-pin-scale-width="800"
+          href="https://www.pinterest.com/mayaontheinternet/quotes/"
+        ></a>
+      </article>
+      <h1>thanks for listening : - )</h1>
     </section>
   </div>
 </template>
@@ -194,6 +211,22 @@ export default {
       titleIndex: 0,
       maxSeconds: 600000,
       currentSecond: 600000,
+      channels: [
+        "bigbeauty",
+        "girlhood",
+        "buyingthings",
+        "collaging",
+        "fastfashion",
+        "girlboss",
+        "influencerburnout",
+        "internet",
+        "tiktok",
+        "website",
+        "womxnartists",
+        "presentation",
+        "cyber",
+        "work",
+      ],
     };
   },
   mounted() {
@@ -217,7 +250,11 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%; */
-  background: rgb(255, 204, 255);
+  /* background: rgb(255, 204, 255); */
+  background: #cbe3ff;
+  /* background: #d0e8f1; */
+  /* background: #e6dac1; */
+  /* background: blue; */
 }
 
 .movable-img {
@@ -325,5 +362,17 @@ section {
 
 article {
   padding: 50px 0px;
+}
+
+.channels {
+  display: flex;
+  /* flex-flow: row; */
+  /* flex-flow: wrap; */
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.channel {
+  max-width: 30%;
 }
 </style>

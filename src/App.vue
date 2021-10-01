@@ -216,10 +216,10 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
-      <img src="@/assets/comment_03.jpg" alt="" />
-      <img src="@/assets/comment_02.jpg" alt="" />
-      <img src="@/assets/comment_04.jpg" alt="" />
       <img src="@/assets/comment_01.png" alt="" />
+      <img src="@/assets/comment_02.jpg" alt="" />
+      <img src="@/assets/comment_03.jpg" alt="" />
+      <img src="@/assets/comment_04.jpg" alt="" />
 
       <!-- <article>
         <a
@@ -232,7 +232,7 @@
       </article> -->
       <aside>❋</aside>
 
-      <h1>Thanks for listening : - ) </h1>
+      <h1>Thanks for listening : - )</h1>
     </section>
   </div>
 </template>

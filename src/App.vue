@@ -18,6 +18,21 @@
       <img src="@/assets/channels/internet.png" alt="" />
     </movable> -->
 
+    <!-- <div
+      class="channel"
+      v-for="(channelName, index) in channels"
+      :key="channelName"
+    >
+      <movable
+        :posTop="positions[index][1]"
+        :posLeft="positions[index][0]"
+        class="modaltitle movable-img"
+        target="parentEl"
+      >
+        <img :src="require('@/assets/channels/' + channelName + '.png')" />
+      </movable>
+    </div> -->
+
     <section>
       <iframe src="https://mayaontheinter.net/" frameborder="0"></iframe>
       <p>
@@ -142,6 +157,22 @@
           playsinline
           src="@/assets/glancebacks_2021-09-28.mp4"
         ></video>
+
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          src="https://glanceback.info/assets/gallery/Sal.mp4"
+        ></video>
+
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          src="https://glanceback.info/assets/gallery/LaurenGlanceBack.mp4"
+        ></video>
       </article>
       <article>
         <p><i>THE MODEL MINORITY IS A MYTH!</i></p>
@@ -182,6 +213,10 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       ></iframe>
+      <img src="@/assets/comment_03.jpg" alt="" />
+      <img src="@/assets/comment_02.jpg" alt="" />
+      <img src="@/assets/comment_04.jpg" alt="" />
+      <img src="@/assets/comment_01.png" alt="" />
 
       <article>
         <a
@@ -212,20 +247,40 @@ export default {
       maxSeconds: 600000,
       currentSecond: 600000,
       channels: [
+        "presentation",
         "bigbeauty",
         "girlhood",
-        "buyingthings",
-        "collaging",
-        "fastfashion",
         "girlboss",
         "influencerburnout",
-        "internet",
         "tiktok",
-        "website",
         "womxnartists",
-        "presentation",
         "cyber",
         "work",
+      ],
+      channelArchive: [
+        "buyingthings",
+        "internet",
+        "collaging",
+        "fastfashion",
+        "website",
+      ],
+      positions: [
+        [50, 1194],
+        [1090, 2389],
+        [35, 3582],
+        [1119, 4776],
+        [50, 5970],
+        [1090, 7164],
+        [75, 8358],
+        [1119, 9552],
+        [50, 10746],
+        [1090, 11940],
+        [35, 13134],
+        [1119, 14328],
+        [100, 15522],
+        [1090, 16716],
+        [35, 17910],
+        [1119, 19104],
       ],
     };
   },

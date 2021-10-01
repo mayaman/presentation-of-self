@@ -232,7 +232,7 @@
       </article> -->
       <aside>❋</aside>
 
-      <h1>Thanks for listening <3</h1>
+      <h1>Thanks for listening : - ) </h1>
     </section>
   </div>
 </template>

@@ -76,7 +76,7 @@
     </section> -->
     <aside>❋</aside>
     <section>
-      <h1>Putting myself on screen (dance, performance, software)</h1>
+      <h1>Putting myself on screen</h1>
       <article>
         <video
           autoplay
@@ -135,7 +135,7 @@
     </section>
     <aside>❋</aside> -->
     <section>
-      <h1>Putting myself on screen some more (identity, image, analysis)</h1>
+      <h1>Putting myself on screen some more!!!</h1>
 
       <article>
         <p><i>Glance Back</i></p>
@@ -192,7 +192,7 @@
     </section>
     <aside>❋</aside>
     <section>
-      <p>okay so where am I going with this?</p>
+      <p>Okay so where am I going with this?</p>
 
       <div class="channels">
         <div
@@ -232,7 +232,7 @@
       </article> -->
       <aside>❋</aside>
 
-      <h1>thanks for listening : - )</h1>
+      <h1>Thanks for listening <3</h1>
     </section>
   </div>
 </template>

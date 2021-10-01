@@ -195,8 +195,11 @@
       <p>okay so where am I going with this?</p>
 
       <div class="channels">
-        <div class="channel" v-for="channelName in channels" v-bind:key>
-          <!-- <img :src="'@/assets/channels/${channelName}.png'" alt="" /> -->
+        <div
+          class="channel"
+          v-for="channelName in channels"
+          v-bind:key="channelName"
+        >
           <img :src="require('@/assets/channels/' + channelName + '.png')" />
         </div>
       </div>

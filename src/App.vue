@@ -54,7 +54,7 @@
     </section>
     <aside>❋</aside>
     <section>
-      <img src="@/assets/tbh.png" alt="" />
+      <!-- <img src="@/assets/tbh.png" alt="" /> -->
       <video autoplay loop muted playsinline src="@/assets/jazz.mp4"></video>
       <iframe
         width="560"
@@ -66,14 +66,14 @@
         allowfullscreen
       ></iframe>
     </section>
-    <aside>❋</aside>
+    <!-- <aside>❋</aside>
     <section>
       <img src="@/assets/trickmirror.jpeg" alt="" />
       <p>
         "You can’t just walk around and be visible on the internet--for anyone
         to see you, you have to <i>act</i>."
       </p>
-    </section>
+    </section> -->
     <aside>❋</aside>
     <section>
       <h1>Putting myself on screen (dance, performance, software)</h1>
@@ -143,13 +143,13 @@
           You spend so much time looking at your computer... doesn't your
           computer deserve a chance to look back at you?
         </p>
-        <img src="@/assets/glancebackchromeweb.png" alt="" />
+
+        <img src="@/assets/1_question.png" alt="" />
+        <img src="@/assets/2_mainpage.png" alt="" />
         <p>
           Glance Back is a daily photo diary, capturing the moments shared
           between you and your computer.
         </p>
-        <img src="@/assets/1_question.png" alt="" />
-        <img src="@/assets/2_mainpage.png" alt="" />
         <video
           autoplay
           loop
@@ -157,7 +157,7 @@
           playsinline
           src="@/assets/glancebacks_2021-09-28.mp4"
         ></video>
-
+        <img src="@/assets/glancebackchromeweb.png" alt="" />
         <video
           autoplay
           loop
@@ -248,14 +248,14 @@ export default {
       currentSecond: 600000,
       channels: [
         "presentation",
-        "bigbeauty",
         "girlhood",
         "girlboss",
         "influencerburnout",
         "tiktok",
-        "womxnartists",
         "cyber",
+        "bigbeauty",
         "work",
+        "womxnartists",
       ],
       channelArchive: [
         "buyingthings",
